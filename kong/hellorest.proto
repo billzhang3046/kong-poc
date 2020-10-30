@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package hello;
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse) {
+    option (google.api.http) = {
+      get: "/v1/messages/{greeting}"
+      additional_bindings {
+        get: "/v1/messages/legacy/{greeting=**}"
+      }
+      post: "/v1/messages/"
+      body: "*"
+    }
+  }
+
+  rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse) {
+    option (google.api.http) = {
+      get: "/v1/lotsofreplies/{greeting}"
+    } 
+  }
+}
+
+
+// The request message containing the user's name.
+message HelloRequest {
+  string greeting = 1;
+}
+
+// The response message containing the greetings
+message HelloResponse {
+  string reply = 1;
+}
