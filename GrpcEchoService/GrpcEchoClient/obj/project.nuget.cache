@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "bHgQ7TnTEpYtxKDvuXfgaxlNrQUNOKNAR5S3RdXymrfODH0lxBlkRlRq7gFu8Rj14wstVGAaaAvWjnrEadU97A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\I50617\\source\\repos\\GrpcEchoService\\GrpcEchoClient\\GrpcEchoClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\I50617\\.nuget\\packages\\google.protobuf\\3.9.1\\google.protobuf.3.9.1.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\grpc.core.api\\2.23.0\\grpc.core.api.2.23.0.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\grpc.net.client\\2.23.2\\grpc.net.client.2.23.2.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\grpc.net.clientfactory\\2.23.2\\grpc.net.clientfactory.2.23.2.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\grpc.net.common\\2.23.2\\grpc.net.common.2.23.2.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\grpc.tools\\2.23.0\\grpc.tools.2.23.0.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.configuration.binder\\2.1.1\\microsoft.extensions.configuration.binder.2.1.1.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration.commandline\\3.1.9\\microsoft.extensions.configuration.commandline.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\3.1.9\\microsoft.extensions.configuration.environmentvariables.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.9\\microsoft.extensions.configuration.fileextensions.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.9\\microsoft.extensions.configuration.json.3.1.9.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.dependencyinjection.abstractions\\2.1.1\\microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.9\\microsoft.extensions.fileproviders.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.9\\microsoft.extensions.fileproviders.physical.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.9\\microsoft.extensions.filesystemglobbing.3.1.9.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.http\\2.1.1\\microsoft.extensions.http.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.logging\\2.1.1\\microsoft.extensions.logging.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.options\\2.1.1\\microsoft.extensions.options.2.1.1.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\I50617\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

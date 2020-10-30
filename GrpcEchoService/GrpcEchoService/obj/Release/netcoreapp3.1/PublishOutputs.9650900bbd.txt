@@ -1,0 +1,16 @@
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\GrpcEchoService.exe
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\appsettings.Development.json
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\appsettings.json
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\GrpcEchoService.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\GrpcEchoService.deps.json
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\GrpcEchoService.runtimeconfig.json
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\GrpcEchoService.pdb
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Google.Protobuf.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.AspNetCore.Server.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.AspNetCore.Server.Reflection.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.Core.Api.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.Net.Client.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.Net.ClientFactory.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.Net.Common.dll
+C:\Users\I50617\source\repos\GrpcEchoService\GrpcEchoService\bin\Release\netcoreapp3.1\publish\Grpc.Reflection.dll

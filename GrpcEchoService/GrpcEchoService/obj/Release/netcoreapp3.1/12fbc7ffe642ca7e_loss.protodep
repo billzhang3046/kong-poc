@@ -1,0 +1,2 @@
+obj\Release\netcoreapp3.1/Loss.cs \
+obj\Release\netcoreapp3.1/LossGrpc.cs: Protos/loss.proto
