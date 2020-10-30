@@ -1,0 +1,155 @@
+{
+    "next": null,
+    "data": [
+        {
+            "created_at": 1603777887,
+            "id": "53c8b59e-da20-44b3-b504-5a2d47ed4dbc",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "grpc-gateway",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "6a23094c-cfb5-4110-b0a3-68a5d6ce3176"
+            },
+            "config": {
+                "proto": "/etc/kong/lossrest.proto"
+            }
+        },
+        {
+            "created_at": 1603777397,
+            "id": "564327c7-4243-4d97-9b45-ee6e2fcea06d",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "grpc-gateway",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "9acc2841-594a-4634-9f64-343cb2e6664e"
+            },
+            "config": {
+                "proto": "/etc/kong/hellorest.proto"
+            }
+        },
+        {
+            "created_at": 1603945763,
+            "id": "73107cce-c46c-43a9-afb8-743279f1503f",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "file-log",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "6a23094c-cfb5-4110-b0a3-68a5d6ce3176"
+            },
+            "config": {
+                "path": "/usr/local/kong/loss.log",
+                "reopen": false
+            }
+        },
+        {
+            "created_at": 1603943030,
+            "id": "79473211-01d0-46d6-8d02-c056c3334833",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "grpc-gateway",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "7f8738b2-29b8-42d8-9c69-3a4c7b4c6c3c"
+            },
+            "config": {
+                "proto": "/etc/kong/grpcbinrest.proto"
+            }
+        },
+        {
+            "created_at": 1603735094,
+            "id": "9a15a38e-2b87-4170-a42a-f153bfe96c29",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "grpc-gateway",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "0ab622ec-759f-46ec-bb31-92db97119a3c"
+            },
+            "config": {
+                "proto": "/etc/kong/hellorest.proto"
+            }
+        },
+        {
+            "created_at": 1603947524,
+            "id": "ca5d2386-69ff-4da5-9d99-0b7d405c718c",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "file-log",
+            "consumer": null,
+            "service": null,
+            "route": {
+                "id": "0f8ca7c7-47f8-4a3e-833c-92bcd908a723"
+            },
+            "config": {
+                "path": "/usr/local/kong/loss_grpc.log",
+                "reopen": false
+            }
+        },
+        {
+            "created_at": 1603737713,
+            "id": "db300cfe-37a8-4a85-8c52-85ce93497c7c",
+            "tags": null,
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "file-log",
+            "consumer": null,
+            "service": {
+                "id": "de75da28-87d8-4124-9c3c-4888b3d5f9d3"
+            },
+            "route": null,
+            "config": {
+                "path": "/usr/local/kong/file.log",
+                "reopen": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "next": null,
+    "data": [
+        {
+            "id": "0f8ca7c7-47f8-4a3e-833c-92bcd908a723",
+            "path_handling": "v0",
+            "paths": [
+                "/loss.Loss/"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "grpcs"
+            ],
+            "created_at": 1603772765,
+            "snis": null,
+            "service": {
+                "id": "c4cb6b6a-be0e-43eb-8b6d-4a104dd72700"
+            },
+            "name": "get-event-result",
+            "strip_path": false,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "updated_at": 1603773613,
+            "sources": null,
+            "methods": null,
+            "https_redirect_status_code": 426,
+            "hosts": null,
+            "tags": null
+        },
+        {
+            "id": "4d38626d-a49a-427d-a470-b6b2f1ea4122",
+            "path_handling": "v0",
+            "paths": [
+                "/hello.HelloService/"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "grpcs"
+            ],
+            "created_at": 1603773982,
+            "snis": null,
+            "service": {
+                "id": "2b5c0dcf-5965-4483-891f-0bb468736de9"
+            },
+            "name": "say-hello",
+            "strip_path": false,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "updated_at": 1603773982,
+            "sources": null,
+            "methods": null,
+            "https_redirect_status_code": 426,
+            "hosts": null,
+            "tags": null
+        },
+        {
+            "id": "6a23094c-cfb5-4110-b0a3-68a5d6ce3176",
+            "path_handling": "v0",
+            "paths": [
+                "/loss/"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "https"
+            ],
+            "created_at": 1603777698,
+            "snis": null,
+            "service": {
+                "id": "c4cb6b6a-be0e-43eb-8b6d-4a104dd72700"
+            },
+            "name": "echo-web",
+            "strip_path": true,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "updated_at": 1603777698,
+            "sources": null,
+            "methods": null,
+            "https_redirect_status_code": 426,
+            "hosts": null,
+            "tags": null
+        },
+        {
+            "id": "7f8738b2-29b8-42d8-9c69-3a4c7b4c6c3c",
+            "path_handling": "v0",
+            "paths": [
+                "/v2/"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "https"
+            ],
+            "created_at": 1603943016,
+            "snis": null,
+            "service": {
+                "id": "2b5c0dcf-5965-4483-891f-0bb468736de9"
+            },
+            "name": "grpcbins-web2",
+            "strip_path": true,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "updated_at": 1603943016,
+            "sources": null,
+            "methods": null,
+            "https_redirect_status_code": 426,
+            "hosts": null,
+            "tags": null
+        },
+        {
+            "id": "9acc2841-594a-4634-9f64-343cb2e6664e",
+            "path_handling": "v0",
+            "paths": [
+                "/v1/"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "https"
+            ],
+            "created_at": 1603777307,
+            "snis": null,
+            "service": {
+                "id": "2b5c0dcf-5965-4483-891f-0bb468736de9"
+            },
+            "name": "grpcbins-web",
+            "strip_path": true,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "updated_at": 1603810342,
+            "sources": null,
+            "methods": null,
+            "https_redirect_status_code": 426,
+            "hosts": null,
+            "tags": null
+        }
+    ]
+}

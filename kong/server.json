@@ -1,0 +1,480 @@
+{
+    "plugins": {
+        "enabled_in_cluster": [
+            "grpc-gateway",
+            "file-log"
+        ],
+        "available_on_server": {
+            "grpc-web": true,
+            "correlation-id": true,
+            "pre-function": true,
+            "cors": true,
+            "rate-limiting": true,
+            "loggly": true,
+            "hmac-auth": true,
+            "zipkin": true,
+            "request-size-limiting": true,
+            "azure-functions": true,
+            "request-transformer": true,
+            "oauth2": true,
+            "response-transformer": true,
+            "ip-restriction": true,
+            "statsd": true,
+            "jwt": true,
+            "proxy-cache": true,
+            "basic-auth": true,
+            "key-auth": true,
+            "http-log": true,
+            "session": true,
+            "datadog": true,
+            "tcp-log": true,
+            "prometheus": true,
+            "post-function": true,
+            "ldap-auth": true,
+            "acl": true,
+            "grpc-gateway": true,
+            "file-log": true,
+            "syslog": true,
+            "udp-log": true,
+            "response-ratelimiting": true,
+            "aws-lambda": true,
+            "bot-detection": true,
+            "acme": true,
+            "request-termination": true
+        }
+    },
+    "tagline": "Welcome to kong",
+    "configuration": {
+        "plugins": [
+            "bundled"
+        ],
+        "cluster_mtls": "shared",
+        "admin_listen": [
+            "0.0.0.0:8001",
+            "0.0.0.0:8444 ssl"
+        ],
+        "proxy_access_log": "/dev/stdout",
+        "nginx_stream_directives": [
+            {
+                "value": "stream_prometheus_metrics 5m",
+                "name": "lua_shared_dict"
+            },
+            {
+                "value": "off",
+                "name": "ssl_prefer_server_ciphers"
+            },
+            {
+                "value": "TLSv1.2 TLSv1.3",
+                "name": "ssl_protocols"
+            },
+            {
+                "value": "on",
+                "name": "ssl_session_tickets"
+            },
+            {
+                "value": "1d",
+                "name": "ssl_session_timeout"
+            }
+        ],
+        "nginx_conf": "/usr/local/kong/nginx.conf",
+        "cassandra_username": "kong",
+        "nginx_events_directives": [
+            {
+                "value": "on",
+                "name": "multi_accept"
+            },
+            {
+                "value": "auto",
+                "name": "worker_connections"
+            }
+        ],
+        "admin_ssl_cert_key": "/usr/local/kong/ssl/admin-kong-default.key",
+        "dns_resolver": {},
+        "nginx_upstream_keepalive_requests": "100",
+        "nginx_http_upstream_directives": [
+            {
+                "value": "60",
+                "name": "keepalive"
+            },
+            {
+                "value": "100",
+                "name": "keepalive_requests"
+            },
+            {
+                "value": "60s",
+                "name": "keepalive_timeout"
+            }
+        ],
+        "nginx_main_daemon": "off",
+        "stream_proxy_ssl_enabled": false,
+        "nginx_acc_logs": "/usr/local/kong/logs/access.log",
+        "pg_semaphore_timeout": 60000,
+        "proxy_listen": [
+            "0.0.0.0:8000  reuseport backlog=16384",
+            "0.0.0.0:8443 http2 ssl reuseport backlog=16384"
+        ],
+        "client_ssl_cert_default": "/usr/local/kong/ssl/kong-default.crt",
+        "go_pluginserver_exe": "/usr/local/bin/go-pluginserver",
+        "dns_no_sync": false,
+        "db_update_propagation": 0,
+        "stream_listen": [
+            "off"
+        ],
+        "nginx_err_logs": "/usr/local/kong/logs/error.log",
+        "ssl_prefer_server_ciphers": "on",
+        "headers": [
+            "server_tokens",
+            "latency_tokens"
+        ],
+        "nginx_http_client_max_body_size": "0",
+        "status_ssl_enabled": false,
+        "status_listen": [
+            "off"
+        ],
+        "cassandra_lb_policy": "RequestRoundRobin",
+        "cluster_control_plane": "127.0.0.1:8005",
+        "nginx_http_ssl_prefer_server_ciphers": "off",
+        "pg_database": "kong",
+        "nginx_http_client_body_buffer_size": "8k",
+        "admin_acc_logs": "/usr/local/kong/logs/admin_access.log",
+        "cassandra_refresh_frequency": 60,
+        "nginx_pid": "/usr/local/kong/pids/nginx.pid",
+        "nginx_main_worker_rlimit_nofile": "auto",
+        "cassandra_contact_points": [
+            "127.0.0.1"
+        ],
+        "proxy_listeners": [
+            {
+                "listener": "0.0.0.0:8000 reuseport backlog=16384",
+                "proxy_protocol": false,
+                "reuseport": true,
+                "deferred": false,
+                "ssl": false,
+                "ip": "0.0.0.0",
+                "backlog=16384": true,
+                "http2": false,
+                "port": 8000,
+                "bind": false
+            },
+            {
+                "listener": "0.0.0.0:8443 ssl http2 reuseport backlog=16384",
+                "proxy_protocol": false,
+                "reuseport": true,
+                "deferred": false,
+                "ssl": true,
+                "ip": "0.0.0.0",
+                "backlog=16384": true,
+                "http2": true,
+                "port": 8443,
+                "bind": false
+            }
+        ],
+        "db_cache_warmup_entities": [
+            "services",
+            "plugins"
+        ],
+        "enabled_headers": {
+            "latency_tokens": true,
+            "X-Kong-Response-Latency": true,
+            "Server": true,
+            "X-Kong-Admin-Latency": true,
+            "X-Kong-Upstream-Status": false,
+            "Via": true,
+            "X-Kong-Proxy-Latency": true,
+            "server_tokens": true,
+            "X-Kong-Upstream-Latency": true
+        },
+        "nginx_http_ssl_protocols": "TLSv1.2 TLSv1.3",
+        "upstream_keepalive_idle_timeout": 60,
+        "db_cache_ttl": 0,
+        "nginx_events_multi_accept": "on",
+        "admin_ssl_cert_default": "/usr/local/kong/ssl/admin-kong-default.crt",
+        "pg_ssl": false,
+        "status_access_log": "off",
+        "cluster_listeners": [
+            {
+                "listener": "0.0.0.0:8005",
+                "proxy_protocol": false,
+                "reuseport": false,
+                "backlog=%d+": false,
+                "deferred": false,
+                "ssl": false,
+                "ip": "0.0.0.0",
+                "port": 8005,
+                "http2": false,
+                "bind": false
+            }
+        ],
+        "ssl_protocols": "TLSv1.1 TLSv1.2 TLSv1.3",
+        "kong_env": "/usr/local/kong/.kong_env",
+        "cassandra_schema_consensus_timeout": 10000,
+        "log_level": "debug",
+        "admin_ssl_cert_key_default": "/usr/local/kong/ssl/admin-kong-default.key",
+        "ssl_session_timeout": "1d",
+        "real_ip_recursive": "off",
+        "cassandra_repl_factor": 1,
+        "nginx_main_worker_processes": "auto",
+        "port_maps": {},
+        "pg_port": 5432,
+        "cassandra_keyspace": "kong",
+        "ssl_cert_default": "/usr/local/kong/ssl/kong-default.crt",
+        "nginx_http_ssl_session_timeout": "1d",
+        "error_default_type": "text/plain",
+        "upstream_keepalive_pool_size": 60,
+        "worker_consistency": "strict",
+        "nginx_stream_ssl_session_timeout": "1d",
+        "admin_ssl_enabled": true,
+        "trusted_ips": {},
+        "loaded_plugins": {
+            "grpc-web": true,
+            "correlation-id": true,
+            "pre-function": true,
+            "cors": true,
+            "rate-limiting": true,
+            "loggly": true,
+            "hmac-auth": true,
+            "zipkin": true,
+            "request-size-limiting": true,
+            "azure-functions": true,
+            "request-transformer": true,
+            "oauth2": true,
+            "prometheus": true,
+            "syslog": true,
+            "statsd": true,
+            "jwt": true,
+            "proxy-cache": true,
+            "basic-auth": true,
+            "key-auth": true,
+            "http-log": true,
+            "session": true,
+            "datadog": true,
+            "tcp-log": true,
+            "acme": true,
+            "post-function": true,
+            "bot-detection": true,
+            "acl": true,
+            "grpc-gateway": true,
+            "response-transformer": true,
+            "ip-restriction": true,
+            "udp-log": true,
+            "response-ratelimiting": true,
+            "aws-lambda": true,
+            "file-log": true,
+            "ldap-auth": true,
+            "request-termination": true
+        },
+        "nginx_supstream_directives": {},
+        "ssl_cert_key": "/usr/local/kong/ssl/kong-default.key",
+        "host_ports": {},
+        "pg_user": "kong",
+        "mem_cache_size": "128m",
+        "ssl_ciphers": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
+        "nginx_admin_directives": {},
+        "nginx_upstream_keepalive_timeout": "60s",
+        "nginx_http_directives": [
+            {
+                "value": "8k",
+                "name": "client_body_buffer_size"
+            },
+            {
+                "value": "0",
+                "name": "client_max_body_size"
+            },
+            {
+                "value": "prometheus_metrics 5m",
+                "name": "lua_shared_dict"
+            },
+            {
+                "value": "off",
+                "name": "ssl_prefer_server_ciphers"
+            },
+            {
+                "value": "TLSv1.2 TLSv1.3",
+                "name": "ssl_protocols"
+            },
+            {
+                "value": "on",
+                "name": "ssl_session_tickets"
+            },
+            {
+                "value": "1d",
+                "name": "ssl_session_timeout"
+            }
+        ],
+        "pg_host": "kong-database",
+        "nginx_kong_stream_conf": "/usr/local/kong/nginx-kong-stream.conf",
+        "stream_listeners": {},
+        "go_plugins_dir": "off",
+        "cluster_listen": [
+            "0.0.0.0:8005"
+        ],
+        "cassandra_write_consistency": "ONE",
+        "dns_order": [
+            "LAST",
+            "SRV",
+            "A",
+            "CNAME"
+        ],
+        "dns_error_ttl": 1,
+        "nginx_sproxy_directives": {},
+        "nginx_http_upstream_keepalive_timeout": "60s",
+        "pg_timeout": 5000,
+        "nginx_http_upstream_keepalive_requests": "100",
+        "database": "postgres",
+        "nginx_upstream_keepalive": "60",
+        "nginx_worker_processes": "auto",
+        "nginx_http_status_directives": {},
+        "nginx_optimizations": true,
+        "cassandra_data_centers": [
+            "dc1:2",
+            "dc2:3"
+        ],
+        "lua_package_path": "./?.lua;./?/init.lua;",
+        "nginx_status_directives": {},
+        "upstream_keepalive": 60,
+        "nginx_upstream_directives": [
+            {
+                "value": "60",
+                "name": "keepalive"
+            },
+            {
+                "value": "100",
+                "name": "keepalive_requests"
+            },
+            {
+                "value": "60s",
+                "name": "keepalive_timeout"
+            }
+        ],
+        "worker_state_update_frequency": 5,
+        "nginx_stream_ssl_protocols": "TLSv1.2 TLSv1.3",
+        "cassandra_port": 9042,
+        "pg_max_concurrent_queries": 0,
+        "lua_package_cpath": "",
+        "ssl_cert_key_default": "/usr/local/kong/ssl/kong-default.key",
+        "ssl_cipher_suite": "intermediate",
+        "proxy_ssl_enabled": true,
+        "nginx_http_upstream_keepalive": "60",
+        "upstream_keepalive_max_requests": 100,
+        "lua_socket_pool_size": 30,
+        "pg_ro_ssl_verify": false,
+        "lua_ssl_verify_depth": 1,
+        "db_resurrect_ttl": 30,
+        "cassandra_ssl": false,
+        "admin_ssl_cert": "/usr/local/kong/ssl/admin-kong-default.crt",
+        "client_max_body_size": "0",
+        "admin_error_log": "/dev/stderr",
+        "nginx_main_directives": [
+            {
+                "value": "off",
+                "name": "daemon"
+            },
+            {
+                "value": "auto",
+                "name": "worker_processes"
+            },
+            {
+                "value": "auto",
+                "name": "worker_rlimit_nofile"
+            }
+        ],
+        "dns_not_found_ttl": 30,
+        "nginx_http_ssl_session_tickets": "on",
+        "nginx_proxy_directives": [
+            {
+                "value": "X-Real-IP",
+                "name": "real_ip_header"
+            },
+            {
+                "value": "off",
+                "name": "real_ip_recursive"
+            }
+        ],
+        "cassandra_ssl_verify": false,
+        "cassandra_repl_strategy": "SimpleStrategy",
+        "status_error_log": "logs/status_error.log",
+        "dns_stale_ttl": 4,
+        "kic": false,
+        "proxy_error_log": "/dev/stderr",
+        "nginx_kong_conf": "/usr/local/kong/nginx-kong.conf",
+        "real_ip_header": "X-Real-IP",
+        "status_ssl_cert_key_default": "/usr/local/kong/ssl/status-kong-default.key",
+        "admin_listeners": [
+            {
+                "listener": "0.0.0.0:8001",
+                "proxy_protocol": false,
+                "reuseport": false,
+                "backlog=%d+": false,
+                "deferred": false,
+                "ssl": false,
+                "ip": "0.0.0.0",
+                "port": 8001,
+                "http2": false,
+                "bind": false
+            },
+            {
+                "listener": "0.0.0.0:8444 ssl",
+                "proxy_protocol": false,
+                "reuseport": false,
+                "backlog=%d+": false,
+                "deferred": false,
+                "ssl": true,
+                "ip": "0.0.0.0",
+                "port": 8444,
+                "http2": false,
+                "bind": false
+            }
+        ],
+        "db_update_frequency": 5,
+        "ssl_cert": "/usr/local/kong/ssl/kong-default.crt",
+        "nginx_proxy_real_ip_recursive": "off",
+        "pg_ro_ssl": false,
+        "nginx_stream_ssl_prefer_server_ciphers": "off",
+        "nginx_events_worker_connections": "auto",
+        "dns_hostsfile": "/etc/hosts",
+        "admin_access_log": "/dev/stdout",
+        "client_ssl": false,
+        "client_ssl_cert_key_default": "/usr/local/kong/ssl/kong-default.key",
+        "nginx_daemon": "off",
+        "anonymous_reports": true,
+        "cassandra_timeout": 5000,
+        "nginx_proxy_real_ip_header": "X-Real-IP",
+        "status_ssl_cert_default": "/usr/local/kong/ssl/status-kong-default.crt",
+        "status_listeners": {},
+        "client_body_buffer_size": "8k",
+        "ssl_cert_csr_default": "/usr/local/kong/ssl/kong-default.csr",
+        "pg_ssl_verify": false,
+        "prefix": "/usr/local/kong",
+        "ssl_session_tickets": "on",
+        "nginx_stream_ssl_session_tickets": "on",
+        "role": "traditional",
+        "cassandra_read_consistency": "ONE"
+    },
+    "version": "2.1.4",
+    "node_id": "7c87a6c0-3d5d-4248-9daf-0948f1b52efb",
+    "lua_version": "LuaJIT 2.1.0-beta3",
+    "prng_seeds": {
+        "pid: 28": 205613731682,
+        "pid: 24": 174486620152,
+        "pid: 31": 701911752261,
+        "pid: 23": 457711060159,
+        "pid: 1": 127127196385,
+        "pid: 30": 253125146111,
+        "pid: 22": 821021257122,
+        "pid: 37": 611672111652,
+        "pid: 25": 321701467222,
+        "pid: 32": 134138249177,
+        "pid: 35": 214163392452,
+        "pid: 27": 225177242212,
+        "pid: 34": 881832131022,
+        "pid: 26": 171832091058,
+        "pid: 33": 220961121576,
+        "pid: 36": 211208881661,
+        "pid: 29": 224233170119
+    },
+    "timers": {
+        "pending": 9,
+        "running": 0
+    },
+    "hostname": "f522a7edb8a0"
+}
